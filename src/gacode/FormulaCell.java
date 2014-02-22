@@ -63,6 +63,7 @@ public class FormulaCell implements Comparator<FormulaCell>  {
    
    // Overriding the compare method to sort the age 
    public int compare(FormulaCell d, FormulaCell d1){
-      return (int)(d.fitness - d1.fitness);
+       
+       return Double.compare(d.fitness, d1.fitness);
    }
 }
