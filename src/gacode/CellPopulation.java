@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package gacode;
 
@@ -30,12 +25,9 @@ public class CellPopulation {
     private int     initialSequenceLength;
     private int     initialGeneLength;
 
-    
     static private Comparator<FormulaCell> ascTitle;
     static private Comparator<FormulaCell> descPageNumber;
 
-    // We initialize static variables inside a static block.
-       
     CellPopulation(int initialPopulationSize, 
                    int initialSequenceLength, 
                    String geneFile) {

@@ -79,7 +79,7 @@ public class GAConstructorGUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(700, 680));
+        setPreferredSize(new java.awt.Dimension(700, 700));
         getContentPane().setLayout(null);
 
         jTlbrBasics.setBackground(new java.awt.Color(255, 255, 255));
@@ -329,9 +329,9 @@ public class GAConstructorGUI extends javax.swing.JFrame {
         setStatus("Initial Population: 200\n");
         setStatus("Initial size: 6\n");
         setStatus("Using types.txt\n");
-        
-        cellPop = new CellPopulation(200, 6, "types.txt");
-        tblHandler.clearTable();
+        tblHandler.clearTable(); 
+        cellPop = new CellPopulation(10000, 6, "types.txt");
+       
         cellPop.calculateFitness(getCoordinates());
         cellPop.cullPopulation();
         ArrayList<FormulaCell> cellList = cellPop.getCells();
@@ -360,6 +360,7 @@ public class GAConstructorGUI extends javax.swing.JFrame {
     private void setStatus(String str) {
         editorPaneStatus.setText(editorPaneStatus.getText() + str);
     }
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

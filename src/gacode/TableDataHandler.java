@@ -1,17 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package gacode;
 
 import javax.swing.JTable;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Administrator
- */
 public class TableDataHandler {
     JTable table; 
     DefaultTableModel tableModel;
